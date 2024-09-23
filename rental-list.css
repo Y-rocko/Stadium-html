@@ -262,16 +262,8 @@ h3.box-pink {
     1px 0 1px black,
     0 1px 1px black,
     1px 1px 1px black ;
-    display: grid ;
-    grid-template-columns: 75px 1fr 1fr 1fr ;
-    grid-template-rows: 70px 1fr 1fr 1fr 1fr ;
-    grid-template-areas: 
-    "scroll heading heading heading"
-    "scroll rental-001 rental-002 rental-003"
-    "scroll rental-004 rental-005 rental-006"
-    "scroll rental-007 rental-008 rental-009"
-    "scroll rental-010 rental-011 rental-012"
-    ;
+    position: relative;
+
 }  
 
 .scroll-bar {
@@ -311,13 +303,27 @@ h3.box-pink {
     justify-content: center ;
     align-items: center ;
     background-color: #bd439a ;
+    position: absolute ;
+    top: 0 ;
+    left: 75px ;
 }
 
 .rental-list-list {
     grid-area: list ;
-    display: contents;
     height: 455px ;
     width: 1015px ;
+    display: grid ;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    " rental-001 rental-002 rental-003"
+    " rental-004 rental-005 rental-006"
+    " rental-007 rental-008 rental-009"
+    " rental-010 rental-011 rental-012"
+    ;
+    position: absolute ;
+    bottom: 0 ;
+    right: 0 ;
 }
 
 .rental-list-list li {
@@ -412,7 +418,253 @@ h3.box-pink {
     grid-area: "rental-017"
 }
 
+@media only screen and (max-width: 1280px) {
+    h1 {
+        font-size: 40px ;
+    }
+    h2 {
+        font-size: 32px ;
+    }
+    h3 {
+        font-size: 24px ;
+    }
 
+    header {
+        margin: 25px 0 25px 0;
+    }
+    .rental-list-header {
+        width: 900px ;
+    }
+    
+    .entry-pokemon {
+        width: 1000px ;
+        height: 275px ;
+        margin-bottom: 25px ;
+        flex-direction: column  ;
+    }
+    
+    .trainer-square {
+        height: 50px;
+        width: 1000px ;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: space-around ;
+    }
+    
+    .trainer-square h2 {
+       font-size: 24px;
+       margin: 0 ;
+    }
+    
+    .team-slot-container {
+        height: 100% ;
+        width: 1000px ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "slot-1 slot-2 slot-3"
+        "slot-4 slot-5 slot-6";
+    }
+    
+    .box-bar {
+        display: none ;
+    }
+
+    .rental-list-container {
+        height: 525px ;
+        width: 1015px ;
+    }  
+    
+    .scroll-bar {
+    display: none ;
+    }
+    
+    
+    .rental-list-container-head {
+        grid-area: heading ;
+        height: 70px ;
+        width: 1015px ;
+        left: 0 ;
+    }
+    
+    .rental-list-list {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        " rental-001 rental-002 rental-003"
+        " rental-004 rental-005 rental-006"
+        " rental-007 rental-008 rental-009"
+        " rental-010 rental-011 rental-012"
+        ;
+    }
+    
+}
+
+@media only screen and (max-width: 950px) {
+
+    h1 {
+        font-size: 24px ;
+    }
+    h2 {
+        font-size: 24px ;
+    }
+    h3 {
+        font-size: 18px ;
+    }
+
+    .rental-list-header {
+        width: 80% ;
+        margin: 2ch 0 0 0;
+    }
+    .rental-list-header img {
+        height: 75px ;
+        width: 75px ;
+        top: -10px ;
+    }
+
+    .rental-list-header h1 {
+        padding-left: 20px ;
+    }
+    
+    .player-turn {
+        padding-right: 0px ;
+    }
+    
+    .player-bubble {
+        height: 45px ;
+        width: 90px ;
+        margin-right: 5px ;
+    }
+    
+    h2.player-bubble {
+    font-size: 32px ;
+    }
+
+
+    .entry-pokemon {
+        width: 75% ;
+        height: 275px ;
+        flex-direction: column  ;
+        overflow: scroll;
+    }
+    
+    .trainer-square {
+        height: 100px ;
+        width: auto ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        justify-content: center;
+        padding-left: 15% ;
+        padding-right: 15%;
+    }
+    
+    .trainer-square h2 {
+       font-size: 18px;
+       margin: 0 ;
+    }
+    
+    .team-slot-container {
+        height: auto;
+        width: auto ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3, 1fr )  ;
+        grid-template-areas: 
+        "slot-1 slot-2" 
+        "slot-3 slot-4" 
+        "slot-5 slot-6" ;
+    }
+
+    .team-slot {
+        height: 115px;
+    }
+    
+    .box-bar {
+        display: none ;
+    }
+
+    .rental-list-container {
+        height: 525px ;
+        width: 75% ;
+    }  
+    
+    
+    .rental-list-container-head {
+        width: 100% ;
+    }
+    
+    .rental-list-list {
+        width: 100%;
+        overflow: scroll ;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows:  repeat(6, 1fr) ;
+        grid-template-areas: 
+        "rental-001 rental-002" 
+        "rental-003 rental-004" 
+        "rental-005 rental-006"
+        "rental-007 rental-008" 
+        "rental-009 rental-010" 
+        "rental-011 rental-012"
+        ;
+
+    }
+    
+    .rental-list-list li {
+        height: 115px ;
+        position: relative;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+    h1 {
+        font-size: 20px ;
+    }
+
+        
+    .team-slot-container {
+        height: auto;
+        width: auto ;
+        display: grid ;
+        grid-template-columns:  1fr ;
+        grid-template-rows: repeat(6, 1fr )  ;
+        grid-template-areas: 
+        "slot-1" 
+        "slot-2" 
+        "slot-3" 
+        "slot-4" 
+        "slot-5" 
+        "slot-6" ;
+    }
+
+    .rental-list-list {
+        grid-area: list ;
+        width: 100%;
+        overflow: scroll ;
+        grid-template-columns:  1fr  ;
+        grid-template-rows:  repeat(12, 1fr) ;
+        grid-template-areas: 
+        "rental-001" 
+        "rental-002" 
+        "rental-003" 
+        "rental-004" 
+        "rental-005" 
+        "rental-006"
+        "rental-007" 
+        "rental-008" 
+        "rental-009" 
+        "rental-010" 
+        "rental-011" 
+        "rental-012"
+        ;
+
+    }
+
+}
 
 
 
