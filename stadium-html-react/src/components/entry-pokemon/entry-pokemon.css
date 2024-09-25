@@ -1,0 +1,178 @@
+.entry-pokemon {
+    width: 1290px ;
+    height: 225px ;
+    border: 10px solid #fffeed ;
+    border-radius: 10px ;
+    box-shadow: 0 0 1px black, 
+    1px 0 1px black,
+    0 1px 1px black,
+    1px 1px 1px black ;
+    background-color: #3139b2 ;
+    display: flex ;
+    flex-direction: row  ;
+}
+
+.trainer-square {
+    height: 100% ;
+    width: 290px ;
+    background-color: #5e68de ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trainer-square h2 {
+    margin-top: 20px ;
+}
+
+.team-slot-container {
+    height: 100% ;
+    width: 1000px ;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "slot-1 slot-2 slot-3"
+    "slot-4 slot-5 slot-6";
+}
+
+.team-slot-1 {
+    grid-area: "slot-1" ;
+    border: 1px solid black;
+    background-color: #5e68de;
+}
+.team-slot-2 {
+    grid-area: "slot-2" ;
+    border: 1px solid black;
+}
+.team-slot-3 {
+    grid-area: "slot-3" ;
+    border: 1px solid black;
+}
+.team-slot-4 {
+    grid-area: "slot-4" ;
+    border: 1px solid black;
+}
+.team-slot-5 {
+    grid-area: "slot-5" ;
+    border: 1px solid black;
+}
+.team-slot-6 {
+    grid-area: "slot-6" ;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 1280px) {
+
+    h2 {
+        font-size: 32px ;
+    }
+    h3 {
+        font-size: 24px ;
+    }
+
+    .entry-pokemon {
+        width: 1000px ;
+        height: 275px ;
+        margin-bottom: 25px ;
+        flex-direction: column  ;
+    }
+    
+    .trainer-square {
+        height: 50px;
+        width: 1000px ;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: space-around ;
+    }
+    
+    .trainer-square h2 {
+       font-size: 24px;
+       margin: 0 ;
+    }
+    
+    .team-slot-container {
+        height: 100% ;
+        width: 1000px ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "slot-1 slot-2 slot-3"
+        "slot-4 slot-5 slot-6";
+    }
+    
+}
+
+@media only screen and (max-width: 950px) {
+
+    h2 {
+        font-size: 24px ;
+    }
+    h3 {
+        font-size: 18px ;
+    }
+
+    .entry-pokemon {
+        width: 75% ;
+        height: 275px ;
+        flex-direction: column  ;
+        overflow: scroll;
+    }
+    
+    .trainer-square {
+        height: 100px ;
+        width: auto ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        justify-content: center;
+        padding-left: 15% ;
+        padding-right: 15%;
+    }
+    
+    .trainer-square h2 {
+       font-size: 18px;
+       margin: 0 ;
+    }
+    
+    .team-slot-container {
+        height: auto;
+        width: auto ;
+        display: grid ;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3, 1fr )  ;
+        grid-template-areas: 
+        "slot-1 slot-2" 
+        "slot-3 slot-4" 
+        "slot-5 slot-6" ;
+    }
+
+    .team-slot {
+        height: 115px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 650px) {
+
+        
+    .team-slot-container {
+        height: auto;
+        width: auto ;
+        display: grid ;
+        grid-template-columns:  1fr ;
+        grid-template-rows: repeat(6, 1fr )  ;
+        grid-template-areas: 
+        "slot-1" 
+        "slot-2" 
+        "slot-3" 
+        "slot-4" 
+        "slot-5" 
+        "slot-6" ;
+    }
+
+
+}

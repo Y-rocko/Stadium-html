@@ -148,11 +148,7 @@ font-size: 65px ;
     color: #ffe900 ;
 }
 
-main {
-    display: flex ;
-    flex-direction: column ;
-    align-items: center ;
-}
+
 
 .entry-pokemon {
     width: 1290px ;

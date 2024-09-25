@@ -1,0 +1,274 @@
+.rental-list-container {
+    height: 525px ;
+    width: 1090px ;
+    border: 10px solid #fffeed ;
+    border-radius: 10px ;
+    box-shadow: 0 0 1px black, 
+    1px 0 1px black,
+    0 1px 1px black,
+    1px 1px 1px black ;
+    position: relative;
+
+}  
+
+.scroll-bar {
+    grid-area: scroll ;
+    height: 525px ;
+    width: 75px  ;
+    background-color: #3139b2;
+    border-right: 20px solid black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.scroll-bar-bar {
+    height: 425px ;
+    width: 40px ;
+    background-color: #6069e0;
+    border: 9px solid #838cf7 ;
+    border-radius: 5px ;
+    box-sizing: border-box;
+    position: absolute ;
+    bottom: 9px ;
+    left: 9px ;
+}
+
+.scroll-bar-bar img {
+    position: absolute ;
+    top: -40px ;
+    left: -30px ;
+
+}
+
+.rental-list-container-head {
+    grid-area: heading ;
+    height: 70px ;
+    width: 1015px ;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    background-color: #bd439a ;
+    position: absolute ;
+    top: 0 ;
+    left: 75px ;
+}
+
+.rental-list-list {
+    grid-area: list ;
+    height: 455px ;
+    width: 1015px ;
+    display: grid ;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    " rental-001 rental-002 rental-003"
+    " rental-004 rental-005 rental-006"
+    " rental-007 rental-008 rental-009"
+    " rental-010 rental-011 rental-012"
+    ;
+    position: absolute ;
+    bottom: 0 ;
+    right: 0 ;
+}
+
+.rental-list-list li {
+
+    box-sizing: border-box;
+    background-color: #5e68de;
+    display: flex;
+    flex-direction: column ;
+    align-items: left ;
+    justify-content: center ;
+    border: 1px solid black ;
+    position: relative;
+}
+
+.rental-list-list li img {
+    height: 100px ;
+    width: 100px ;
+    position: absolute ;
+    left:  5px ;
+}
+
+.rental-list-list li h3 {
+    position: relative ;
+    left: 105px ;
+}
+
+#001 {
+    grid-area: "rental-001"
+}
+
+#002 {
+    grid-area: "rental-002"
+}
+
+#003 {
+    grid-area: "rental-003"
+}
+
+#004 {
+    grid-area: "rental-004"
+}
+
+#005 {
+    grid-area: "rental-005"
+}
+
+#006 {
+    grid-area: "rental-006"
+}
+
+#007 {
+    grid-area: "rental-007"
+}
+
+#008 {
+    grid-area: "rental-008"
+}
+
+#009 {
+    grid-area: "rental-009"
+}
+
+#010 {
+    grid-area: "rental-010"
+}
+
+#011 {
+    grid-area: "rental-011"
+}
+
+#012 {
+    grid-area: "rental-012"
+}
+
+#013 {
+    grid-area: "rental-013"
+}
+
+#014 {
+    grid-area: "rental-014"
+}
+
+#015 {
+    grid-area: "rental-015"
+}
+
+#016 {
+    grid-area: "rental-016"
+}
+
+#017 {
+    grid-area: "rental-017"
+}
+
+@media only screen and (max-width: 1280px) {
+
+    h2 {
+        font-size: 32px ;
+    }
+    h3 {
+        font-size: 24px ;
+    }
+
+    .rental-list-container {
+        height: 525px ;
+        width: 1015px ;
+    }  
+    
+    .scroll-bar {
+    display: none ;
+    }
+    
+    
+    .rental-list-container-head {
+        grid-area: heading ;
+        height: 70px ;
+        width: 1015px ;
+        left: 0 ;
+    }
+    
+    .rental-list-list {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        " rental-001 rental-002 rental-003"
+        " rental-004 rental-005 rental-006"
+        " rental-007 rental-008 rental-009"
+        " rental-010 rental-011 rental-012"
+        ;
+    }
+    
+}
+
+@media only screen and (max-width: 950px) {
+
+    h2 {
+        font-size: 24px ;
+    }
+    h3 {
+        font-size: 18px ;
+    }
+
+
+    .rental-list-container {
+        height: 525px ;
+        width: 75% ;
+    }  
+    
+    
+    .rental-list-container-head {
+        width: 100% ;
+    }
+    
+    .rental-list-list {
+        width: 100%;
+        overflow: scroll ;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows:  repeat(6, 1fr) ;
+        grid-template-areas: 
+        "rental-001 rental-002" 
+        "rental-003 rental-004" 
+        "rental-005 rental-006"
+        "rental-007 rental-008" 
+        "rental-009 rental-010" 
+        "rental-011 rental-012"
+        ;
+
+    }
+    
+    .rental-list-list li {
+        height: 115px ;
+        position: relative;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 650px) {
+   
+    .rental-list-list {
+        grid-area: list ;
+        width: 100%;
+        overflow: scroll ;
+        grid-template-columns:  1fr  ;
+        grid-template-rows:  repeat(12, 1fr) ;
+        grid-template-areas: 
+        "rental-001" 
+        "rental-002" 
+        "rental-003" 
+        "rental-004" 
+        "rental-005" 
+        "rental-006"
+        "rental-007" 
+        "rental-008" 
+        "rental-009" 
+        "rental-010" 
+        "rental-011" 
+        "rental-012"
+        ;
+
+    }
+
+}

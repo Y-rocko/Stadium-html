@@ -1,0 +1,127 @@
+
+.rental-list-header {
+    height: 80px ;
+    width: 1290px ;
+    margin: 35px ;
+    box-sizing: border-box;
+    background-color: #19249b ;
+    border-radius: 15px ;
+    border: 10px solid #6069e0 ;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between ;
+    align-items: center;
+    position: relative ;
+}
+
+.list-ball {
+    position: absolute ;
+    width: 115px ;
+    height: 115px ;
+    left: -55px ;
+    top: -30px ;
+}
+
+.rental-list-header h1 {
+    color: #ffff97 ;
+    padding-left: 75px ;
+}
+
+.player-turn {
+    display: flex ;
+    flex-direction: row ;
+    align-items: center ;
+    padding-right: 80px ;
+}
+
+.player-bubble {
+    height: 80px ;
+    width: 175px ;
+    /* background-color: #505eff; */
+    background: rgb(8,0,138);
+    background: linear-gradient(313deg, 
+    rgba(8,0,138,1) 
+    0%, rgba(21,87,215,1) 54%);
+    color: #ffe900 ;
+    border-radius: 50% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    box-shadow: 0 0 1px black, 
+    1px 0 1px black,
+    0 1px 1px black,
+    1px 1px 1px black ;
+    margin-right: 25px ;
+}
+
+h2.player-bubble {
+font-size: 65px ;
+}
+
+.player-turn h2 {
+    color: #ffe900 ;
+}
+
+@media only screen and (max-width: 1280px) {
+    h1 {
+        font-size: 40px ;
+    }
+    h2 {
+        font-size: 32px ;
+    }
+    h3 {
+        font-size: 24px ;
+    }
+
+    .rental-list-header {
+        width: 900px ;
+        margin: 25px 0 25px 0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    h1 {
+        font-size: 24px ;
+    }
+    h2 {
+        font-size: 24px ;
+    }
+    h3 {
+        font-size: 18px ;
+    }
+
+    .rental-list-header {
+        width: 80% ;
+    }
+    .rental-list-header img {
+        height: 75px ;
+        width: 75px ;
+        top: -10px ;
+    }
+
+    .rental-list-header h1 {
+        padding-left: 20px ;
+    }
+    
+    .player-turn {
+        padding-right: 0px ;
+    }
+    
+    .player-bubble {
+        height: 45px ;
+        width: 90px ;
+        margin-right: 5px ;
+    }
+    
+    h2.player-bubble {
+    font-size: 32px ;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    h1 {
+        font-size: 20px ;
+    }
+}
