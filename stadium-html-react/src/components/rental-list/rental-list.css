@@ -1,3 +1,19 @@
+.pokeblock-invisibility {
+    visibility: hidden;
+}
+
+.pokeblock-visibility {
+    visibility: visible ;
+}
+
+.color {
+    background-color: red ;
+}
+
+.color2 {
+    background-color: white ;
+}
+
 .rental-list-container {
     height: 525px ;
     width: 1090px ;
@@ -94,6 +110,10 @@
     position: relative ;
     left: 105px ;
 }
+
+.rental-list-list li:hover {
+    background-color: #3139b2;
+}    
 
 #001 {
     grid-area: "rental-001"

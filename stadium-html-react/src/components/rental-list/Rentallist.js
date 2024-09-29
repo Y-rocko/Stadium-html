@@ -1,10 +1,22 @@
+import { useState } from "react";
 import './rental-list.css' ;
 import scroll from './scroll.png' ;
 import bulbasaur from './icon-charizard.png' ;
+import Rentalblocklg from './rental-box-lg/Rentalblocklg.js' ;
+
+
 
 function Rentallist() {
+
+    const [visibility, setVisibility] = useState(false) ;
+
+    function pokeblockHandler() { 
+        setVisibility(true) ;
+    };
+
     return (
 <div class="rental-list-container">
+        {visibility && <Rentalblocklg></Rentalblocklg>} 
             <div class="scroll-bar">
                 <div class="scroll-bar-bar">
                     <img src={scroll} alt='' />
@@ -14,7 +26,7 @@ function Rentallist() {
                 <h2>Rental Pokemon</h2>
             </div>
             <ul class="rental-list-list">
-                    <li  id="001">
+                    <li onClick={pokeblockHandler} id="001">
                         <img src={bulbasaur} />
                         <h3>BULBASAUR</h3>
                         <h3>L50</h3>

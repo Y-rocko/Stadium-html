@@ -1,3 +1,4 @@
+
 import './rental-block-lg.css' ;
 import cup from './cup.png' ; 
 import cleft from './cleft.png' ; 
@@ -7,6 +8,7 @@ import bulba from './bulba.png' ;
 
 
 function Rentalblocklg() {
+
     return (
     <div className="pokeblock">
     <div className="block-heading">
