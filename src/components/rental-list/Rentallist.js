@@ -1,7 +1,18 @@
 import { useState } from "react";
 import './rental-list.css' ;
 import scroll from './scroll.png' ;
-import bulbasaur from './icon-charizard.png' ;
+import bulbasaur from './icons/icon-bulbasaur.png' ;
+import ivysaur from './icons/icon-ivysaur.png' ;
+import venusaur from './icons/icon-venusaur.png' ;
+import charmander from './icons/icon-charmander.png' ;
+import charmeleon from './icons/icon-charmeleon.png' ;
+import charizard from './icons/icon-charizard.png' ;
+import squirtle from './icons/icon-squirtle.png' ;
+import wartortle from  './icons/icon-wartortle.png' ;
+import blastoise from './icons/icon-blastoise.png' ;
+import caterpie from './icons/icon-caterpie.png' ;
+import metapod from './icons/icon-metapod.png' ;
+import butterfree from './icons/icon-butterfree.png' ;
 import Rentalblocklg from './rental-box-lg/Rentalblocklg.js' ;
 
 
@@ -32,57 +43,57 @@ function Rentallist() {
                         <h3>L50</h3>
                     </li>
                     <li id="002">
-                    <img src={bulbasaur} />
+                    <img src={ivysaur} />
                         <h3>IVYSAUR</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="003">
-                    <img src={bulbasaur} />
+                    <img src={venusaur} />
                         <h3>VENUSAUR</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="004">
-                    <img src={bulbasaur} />
+                    <img src={charmander} />
                         <h3>CHARMANDER</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="005">
-                    <img src={bulbasaur} />
+                    <img src={charmeleon} />
                         <h3>CHARMELEON</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="006">
-                    <img src={bulbasaur} />
+                    <img src={charizard} />
                         <h3>CHARIZARD</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="007">
-                    <img src={bulbasaur} />
+                    <img src={squirtle} />
                         <h3>SQUIRTLE</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="008">
-                    <img src={bulbasaur} />
+                    <img src={wartortle} />
                         <h3>WARTORTLE</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="009">
-                    <img src={bulbasaur} />
+                    <img src={blastoise} />
                         <h3>BLASTOISE</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="010">
-                    <img src={bulbasaur} />
+                    <img src={caterpie} />
                         <h3>CATERPIE</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="011">
-                    <img src={bulbasaur} />
+                    <img src={metapod} />
                         <h3>METAPOD</h3>
                         <h3>L50</h3>
                     </li>
                     <li id="012">
-                    <img src={bulbasaur} />
+                    <img src={butterfree} />
                         <h3>BUTTERFREE</h3>
                         <h3>L50</h3>
                     </li>
