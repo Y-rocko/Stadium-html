@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f71efce0.css",
+    "main.js": "/static/js/main.f4b21cbd.js",
+    "static/js/453.596d4b17.chunk.js": "/static/js/453.596d4b17.chunk.js",
+    "static/media/free_battle_1440.png": "/static/media/free_battle_1440.658f83075f77f2abe79b.png",
+    "static/media/list-ball.png": "/static/media/list-ball.f417fe51ac35615cc713.png",
+    "static/media/icon-charizard.png": "/static/media/icon-charizard.744728e134de58b2bdaa.png",
+    "static/media/icon-blastoise.png": "/static/media/icon-blastoise.a00d3fa0ed2b46632d9b.png",
+    "static/media/icon-butterfree.png": "/static/media/icon-butterfree.384860f960e2f8f8602a.png",
+    "static/media/icon-ivysaur.png": "/static/media/icon-ivysaur.e28e4f20abc2ad2ffdd9.png",
+    "static/media/icon-venusaur.png": "/static/media/icon-venusaur.5d3442ea38c01db035b0.png",
+    "static/media/icon-charmeleon.png": "/static/media/icon-charmeleon.f08063fe873187a5d1b4.png",
+    "static/media/icon-squirtle.png": "/static/media/icon-squirtle.06cec43d888051f797da.png",
+    "static/media/icon-wartortle.png": "/static/media/icon-wartortle.416348371d667a257b30.png",
+    "static/media/icon-charmander.png": "/static/media/icon-charmander.e0ccaae84321e64700eb.png",
+    "static/media/icon-caterpie.png": "/static/media/icon-caterpie.a305b0fdf4a41d39c6e2.png",
+    "static/media/scroll.png": "/static/media/scroll.aea732a451a7e0ecbd40.png",
+    "static/media/icon-metapod.png": "/static/media/icon-metapod.a5679ef2a1de8c48cfc3.png",
+    "index.html": "/index.html",
+    "main.f71efce0.css.map": "/static/css/main.f71efce0.css.map",
+    "main.f4b21cbd.js.map": "/static/js/main.f4b21cbd.js.map",
+    "453.596d4b17.chunk.js.map": "/static/js/453.596d4b17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f71efce0.css",
+    "static/js/main.f4b21cbd.js"
+  ]
+}
