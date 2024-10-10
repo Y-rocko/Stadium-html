@@ -7,7 +7,7 @@ import cdown from './cdown.png' ;
 import bulba from './bulba.png' ;
 
 
-function Rentalblocklg() {
+function Rentalblocklg({isVisible}) {
 
     return (
     <div className="pokeblock">
@@ -19,8 +19,8 @@ function Rentalblocklg() {
     </div>
     <div className="block-select">
         <h2 className="block-select-heading">ENTER</h2>
-        <h2 className="hand-select">Yes</h2>
-        <h2 className="hand-select">No</h2>
+        <h2 className="hand-select" onClick={isVisible}>Yes</h2>
+        <h2 className="hand-select" onClick={isVisible} >No</h2>
     </div>
     <div className="block-img">
         <img src={bulba} alt="" /> 

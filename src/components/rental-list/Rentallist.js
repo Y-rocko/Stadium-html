@@ -27,7 +27,7 @@ function Rentallist() {
 
     return (
 <div class="rental-list-container">
-        {visibility && <Rentalblocklg></Rentalblocklg>} 
+        {visibility && <Rentalblocklg isVisible={() => setVisibility(false)} ></Rentalblocklg>} 
             <div class="scroll-bar">
                 <div class="scroll-bar-bar">
                     <img src={scroll} alt='' />
@@ -42,57 +42,57 @@ function Rentallist() {
                         <h3>BULBASAUR</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="002">
+                    <li onClick={pokeblockHandler} id="002">
                     <img src={ivysaur} />
                         <h3>IVYSAUR</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="003">
+                    <lionClick={pokeblockHandler} id="003">
                     <img src={venusaur} />
                         <h3>VENUSAUR</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="004">
+                    <li onClick={pokeblockHandler} id="004">
                     <img src={charmander} />
                         <h3>CHARMANDER</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="005">
+                    <li onClick={pokeblockHandler} id="005">
                     <img src={charmeleon} />
                         <h3>CHARMELEON</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="006">
+                    <li onClick={pokeblockHandler} id="006">
                     <img src={charizard} />
                         <h3>CHARIZARD</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="007">
+                    <li onClick={pokeblockHandler} id="007">
                     <img src={squirtle} />
                         <h3>SQUIRTLE</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="008">
+                    <li onClick={pokeblockHandler} id="008">
                     <img src={wartortle} />
                         <h3>WARTORTLE</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="009">
+                    <li onClick={pokeblockHandler} id="009">
                     <img src={blastoise} />
                         <h3>BLASTOISE</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="010">
+                    <li onClick={pokeblockHandler} id="010">
                     <img src={caterpie} />
                         <h3>CATERPIE</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="011">
+                    <li onClick={pokeblockHandler} id="011">
                     <img src={metapod} />
                         <h3>METAPOD</h3>
                         <h3>L50</h3>
                     </li>
-                    <li id="012">
+                    <li onClick={pokeblockHandler} id="012">
                     <img src={butterfree} />
                         <h3>BUTTERFREE</h3>
                         <h3>L50</h3>

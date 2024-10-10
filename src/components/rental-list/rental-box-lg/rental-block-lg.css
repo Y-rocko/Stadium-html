@@ -788,6 +788,31 @@ h3 {
         width: 110%;
     }
 
+    .block-heading h3:nth-of-type(2n) {
+        display: none;
+
+    }
+
+    .block-img img {
+        height: 175px ;
+
+    }
+
+
+    .type-1 {
+        position: absolute;
+        top: 25px ;
+        left: 25px ;
+        background-color: #059509 ;
+    }
+    
+    .type-2 {
+        position: absolute ;
+        top: 115px ;
+        left: 25px ;
+        background-color: #9337d6 ;
+    }
+
     .stats {
         height: 185px ;
         width: 120px ;
@@ -795,7 +820,7 @@ h3 {
         justify-content: space-between;
         position: absolute ;
         top: 15px ;
-        right: 55px;
+        right: 25px;
     }
 
     
@@ -807,7 +832,7 @@ h3 {
         justify-content: space-between ;
         position: absolute;
         left: auto ;
-        right: 55px ;
+        right: 25px ;
         bottom: 15px ;
     }
 
@@ -859,4 +884,12 @@ h3 {
         width: 40px ;
         margin-left: 10px ;
     }
+}
+
+@media only screen and (max-width: 400px) {
+    .block-img img {
+        height: 100px ;
+
+    }
+
 }
