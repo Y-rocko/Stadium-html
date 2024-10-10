@@ -47,7 +47,7 @@ function Rentallist() {
                         <h3>IVYSAUR</h3>
                         <h3>L50</h3>
                     </li>
-                    <lionClick={pokeblockHandler} id="003">
+                    <li onClick={pokeblockHandler} id="003">
                     <img src={venusaur} />
                         <h3>VENUSAUR</h3>
                         <h3>L50</h3>
